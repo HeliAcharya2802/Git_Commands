@@ -1,0 +1,105 @@
+//Git init to initalize
+git init
+git init -b main
+git status
+
+//Git commit
+git status
+git add .
+or git add filename
+git commit -m "My First Commit"
+
+//to check all git commit log
+git log
+
+
+// to check git difference made
+git diff
+git add . 
+git diff -- staged
+git commit -m "this is first commit" 
+
+//git remove file
+git status
+git add . 
+git status
+git commit -m "Story 1.0"
+git rm --cached filename
+example : git rem --cached password.txt
+
+//Git Repository
+git clone link_of_project_to_clone_SSH
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/repositoryname.git
+git push -u origin main
+
+//add files to git repo
+git status
+git commit -m "new file added"
+git push origin main
+or git push origin master
+
+//git tags
+git remote -v
+git tag
+git tag -a v1.0 -m "First Release"
+git tag
+git push origin v1.0
+
+//git clone project
+find the project or code you want to clone
+copy https link 
+git clone enter_url
+git log
+git tag
+
+
+//git create branch
+
+git checkout -b branchname
+git branch
+git status
+git add . 
+git commit -m "experiment"
+git log
+git switch main //from branchname to main branch 
+or
+git switch 
+
+//delete branch
+git branch --all
+git switch --
+git branch -d branchname
+
+//git branch pushing to remote repository
+git push origin branch2
+
+//git merge
+git branch
+git switch main
+git merge branch2
+git push origin main
+
+//git rebase
+git branch
+git switch -c branch2
+git branch
+git add . 
+git commit -m "hi"
+git log
+
+//git stash
+git switch main
+git stash
+git stash list
+git stash apply
+git status
+git add .
+git commit -m "commits"
+git switch main
+git stash list
+git status
+
